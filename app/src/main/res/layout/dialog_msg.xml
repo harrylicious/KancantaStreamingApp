@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_msg_body"
+    android:name="AboutFragment"
+    tools:layout="@layout/fragment_about"
+    android:background="@drawable/group_rounded_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:background="@drawable/group_rounded_gray">
+
+        <!-- <ImageView
+             android:id="@+id/dialog_btn_send2"
+             android:layout_width="45dp"
+             android:layout_height="45dp"
+             android:layout_alignParentStart="true"
+             android:layout_alignParentTop="true"
+             android:background="@drawable/circle_shape_black_border"
+             android:padding="11dp"
+             android:layout_marginLeft="5dp"
+             android:layout_marginTop="5dp"
+             android:src="@drawable/ic_send2" />-->
+
+
+        <ImageView
+            android:id="@+id/dialog_btn_close"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/app_name"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle_shape_black_border"
+            android:padding="15dp"
+            android:src="@drawable/close" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/dialog_btn_close"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/dialog_msg_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/dialog_separator1"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="@dimen/margin_msg_body"
+                android:layout_marginRight="@dimen/margin_msg_body"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/msg_title"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/dialog_separator1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_above="@id/dialog_msg_deskrib"
+                android:layout_marginLeft="@dimen/margin_msg_body"
+                android:layout_marginRight="@dimen/margin_msg_body"
+                android:background="@color/gray1" />
+
+
+            <TextView
+                android:id="@+id/dialog_msg_deskrib"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/dialog_txt_msg"
+                android:layout_marginLeft="@dimen/margin_msg_body"
+                android:layout_marginRight="@dimen/margin_msg_body"
+                android:fontFamily="@font/roboto_light"
+                android:text="@string/msg_text"
+                android:textAlignment="textStart"
+                android:textSize="16sp" />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/dialog_txt_msg"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/textedit_rounded_gray"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:textAlignment="textStart" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/dialog_btn_send"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/dialog_txt_msg"
+                android:layout_marginLeft="@dimen/margin_msg_body"
+                android:layout_marginRight="@dimen/margin_msg_body"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/button_rounded_send"
+                android:drawableStart="@drawable/ic_send"
+                android:elevation="@dimen/elevation_view"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingRight="@dimen/padding_btn"
+                android:paddingStart="@dimen/padding_btn"
+                android:text="@string/send"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_btn" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

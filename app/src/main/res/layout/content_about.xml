@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/logo_full"/>
+
+            <View
+                android:id="@+id/dialog_separator1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/margin_msg_body"
+                android:layout_marginRight="@dimen/margin_msg_body"
+                android:background="@color/gray1" />
+
+            <LinearLayout
+                android:background="@drawable/shape_box_border_gray"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:text="Company Profile"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#DCEDC8"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+
+               <ScrollView
+                   android:animateLayoutChanges="true"
+                   android:scrollbars="horizontal|vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+                   <GridLayout
+                       android:padding="8dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:rowCount="10">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="0"
+                           android:layout_column="0"
+                           android:fontFamily="@font/roboto_regular"
+                           android:text="Perusahaan"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="0"
+                           android:layout_column="1"
+                           android:layout_marginLeft="10dp"
+                           android:text=":"/>
+                       <TextView
+                           android:id="@+id/txtPerusahaan"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="0"
+                           android:layout_column="2"
+                           android:fontFamily="@font/roboto_light"
+                           android:layout_marginLeft="5dp"
+                           android:textSize="13sp"
+                           android:singleLine="true"
+                           android:textStyle="bold"
+                           android:ellipsize="marquee"
+                           android:marqueeRepeatLimit="marquee_forever"
+                           android:text="PT.RADIO SUARA KANCANTA"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="1"
+                           android:layout_column="0"
+                           android:fontFamily="@font/roboto_regular"
+                           android:text="Merek"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="1"
+                           android:layout_column="1"
+                           android:layout_marginLeft="10dp"
+                           android:text=":"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="1"
+                           android:layout_column="2"
+                           android:fontFamily="@font/roboto_light"
+                           android:layout_marginLeft="5dp"
+                           android:text="Kancanta"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="2"
+                           android:layout_column="0"
+                           android:fontFamily="@font/roboto_regular"
+                           android:text="Format Siaran"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="2"
+                           android:layout_column="1"
+                           android:layout_marginLeft="10dp"
+                           android:text=":"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="2"
+                           android:layout_column="2"
+                           android:fontFamily="@font/roboto_light"
+                           android:layout_marginLeft="5dp"
+                           android:text="News dan Talk"/>
+
+
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="3"
+                           android:layout_column="0"
+                           android:fontFamily="@font/roboto_regular"
+                           android:text="Frekuensi"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="3"
+                           android:layout_column="1"
+                           android:layout_marginLeft="10dp"
+                           android:text=":"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="3"
+                           android:layout_column="2"
+                           android:textStyle="bold"
+                           android:fontFamily="@font/roboto_light"
+                           android:layout_marginLeft="5dp"
+                           android:text="100,3 FM"/>
+
+
+
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="4"
+                           android:layout_column="0"
+                           android:fontFamily="@font/roboto_regular"
+                           android:text="Waktu Siaran"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="4"
+                           android:layout_column="1"
+                           android:layout_marginLeft="10dp"
+                           android:text=":"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="4"
+                           android:layout_column="2"
+                           android:fontFamily="@font/roboto_light"
+                           android:layout_marginLeft="5dp"
+                           android:text="05.00 – 01.00 Wita"/>
+
+
+
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="5"
+                           android:layout_column="0"
+                           android:fontFamily="@font/roboto_regular"
+                           android:text="Alamat Kantor"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="5"
+                           android:layout_column="1"
+                           android:layout_marginLeft="10dp"
+                           android:text=":"/>
+                       <TextView
+                           android:id="@+id/txtPerusahaanAlamat"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="5"
+                           android:layout_column="2"
+                           android:fontFamily="@font/roboto_light"
+                           android:layout_marginLeft="5dp"
+                           android:singleLine="true"
+                           android:ellipsize="marquee"
+                           android:marqueeRepeatLimit="marquee_forever"
+                           android:text="Jalan Lingkar Pelabuhan Labuan Haji, Lotim NTB"/>
+
+
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="6"
+                           android:layout_column="0"
+                           android:fontFamily="@font/roboto_regular"
+                           android:text="Telepone"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="6"
+                           android:layout_column="1"
+                           android:layout_marginLeft="10dp"
+                           android:text=":"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="6"
+                           android:layout_column="2"
+                           android:fontFamily="@font/roboto_light"
+                           android:layout_marginLeft="5dp"
+                           android:text="0376 - 2925897"/>
+
+
+
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="7"
+                           android:layout_column="0"
+                           android:fontFamily="@font/roboto_regular"
+                           android:text="Fax"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="7"
+                           android:layout_column="1"
+                           android:layout_marginLeft="10dp"
+                           android:text=":"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="7"
+                           android:layout_column="2"
+                           android:fontFamily="@font/roboto_light"
+                           android:layout_marginLeft="5dp"
+                           android:text="0376 - 2925895"/>
+
+
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="8"
+                           android:layout_column="0"
+                           android:fontFamily="@font/roboto_regular"
+                           android:text="Email"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="8"
+                           android:layout_column="1"
+                           android:layout_marginLeft="10dp"
+                           android:text=":"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="8"
+                           android:layout_column="2"
+                           android:fontFamily="@font/roboto_light"
+                           android:layout_marginLeft="5dp"
+                           android:autoLink="email"
+                           android:text="kancanta_fm@yahoo.co.id"/>
+
+
+
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="9"
+                           android:layout_column="0"
+                           android:fontFamily="@font/roboto_regular"
+                           android:text="Website"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="9"
+                           android:layout_column="1"
+                           android:layout_marginLeft="10dp"
+                           android:text=":"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_row="9"
+                           android:layout_column="2"
+                           android:fontFamily="@font/roboto_light"
+                           android:layout_marginLeft="5dp"
+                           android:autoLink="web"
+                           android:text="www.kancantaradio.com"/>
+
+                   </GridLayout>
+               </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/shareBtnFB"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Share to Facebook"
+                    android:textColor="@color/foreColor"
+                    android:fontFamily="@font/roboto_light"
+                    android:background="@drawable/custom_btn_share_fb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/shareBtnWa"
+                    android:layout_margin="10dp"
+                    android:text="Share to Whatapp"
+                    android:textColor="@color/foreColor"
+                    android:fontFamily="roboto_light"
+                    android:background="@drawable/custom_btn_share_wa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_msg_body"
+    android:background="@drawable/group_rounded_gray2"
+    tools:context="haqiqi_studio.kancantastreamingapp.IklanActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:background="@drawable/group_rounded_gray2">
+
+        <!-- <ImageView
+             android:id="@+id/dialog_btn_send2"
+             android:layout_width="45dp"
+             android:layout_height="45dp"
+             android:layout_alignParentStart="true"
+             android:layout_alignParentTop="true"
+             android:background="@drawable/circle_shape_black_border"
+             android:padding="11dp"
+             android:layout_marginLeft="5dp"
+             android:layout_marginTop="5dp"
+             android:src="@drawable/ic_send2" />-->
+
+
+        <ImageView
+            android:id="@+id/dialog_kontak_btn_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle_shape_black_border"
+            android:padding="15dp"
+            android:src="@drawable/close" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/dialog_btn_close"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:id="@+id/dialog_separator1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_above="@id/dialog_msg_deskrib"
+                android:layout_marginLeft="@dimen/margin_msg_body"
+                android:layout_marginRight="@dimen/margin_msg_body"
+                android:background="@color/gray1" />
+
+
+            <TextView
+                android:id="@+id/dialog_msg_deskrib"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/dialog_txt_msg"
+                android:layout_marginLeft="@dimen/margin_msg_body"
+                android:layout_marginRight="@dimen/margin_msg_body"
+                android:fontFamily="@font/roboto_light"
+                android:text="Contact Person :"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="24dp" />
+
+
+
+          <LinearLayout
+              android:layout_below="@id/dialog_msg_deskrib"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+                 <LinearLayout
+                     android:orientation="horizontal"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                     <ImageView
+                         android:layout_width="80dp"
+                         android:layout_height="129dp"
+                         android:layout_margin="3dp"
+                         android:src="@drawable/crew_sop" />
+                     <LinearLayout
+                         android:layout_marginTop="5dp"
+                         android:orientation="vertical"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent">
+                         <TextView
+                             android:id="@+id/dialog_nama1"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_below="@id/dialog_msg_deskrib"
+                             android:fontFamily="@font/roboto_regular"
+                             android:text="Martini Shufyna, S.Pd"
+                             android:textAlignment="textStart"
+                             android:textSize="15sp" />
+                         <android.support.v7.widget.AppCompatButton
+                             android:id="@+id/dialog_btn_no1"
+                             android:layout_width="match_parent"
+                             android:layout_height="50dp"
+                            android:layout_marginTop="3dp"
+                             android:layout_marginRight="5dp"
+                             android:background="@drawable/button_rounded_send"
+                              android:elevation="@dimen/elevation_view"
+                             android:fontFamily="@font/roboto_regular"
+                             android:text="0878 6480 6896"
+                             android:textColor="@color/gray"
+                             android:textSize="15sp" />
+
+                         <android.support.v7.widget.AppCompatButton
+                             android:id="@+id/dialog_btn_email1"
+                             android:layout_width="match_parent"
+                             android:layout_height="50dp"
+                             android:layout_marginRight="5dp"
+                              android:background="@drawable/button_rounded_orange"
+                             android:elevation="@dimen/elevation_view"
+                             android:fontFamily="@font/roboto_light"
+                             android:text="martini.shofy@yahoo.co.id"
+                             android:textColor="@color/gray"
+                             android:textSize="14sp" />
+                     </LinearLayout>
+                 </LinearLayout>
+
+                  <View
+                      android:layout_margin="2dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="2dp"
+                      android:layout_marginLeft="50dp"
+                      android:layout_marginRight="50dp"
+                      android:background="@color/gray1"/>
+
+                  <LinearLayout
+                      android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+                      <ImageView
+                          android:src="@drawable/crew_dad"
+                          android:layout_width="80dp"
+                          android:layout_height="129dp"
+                          android:layout_margin="3dp"/>
+                      <LinearLayout
+                          android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent">
+                          <TextView
+                              android:id="@+id/dialog_nama2"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_below="@id/dialog_msg_deskrib"
+                              android:fontFamily="@font/roboto_regular"
+                              android:text="Dading Murni Anggraini, S.Pd"
+                              android:textAlignment="textStart"
+                              android:textSize="15sp" />
+                          <android.support.v7.widget.AppCompatButton
+                              android:id="@+id/dialog_btn_no2"
+                              android:layout_width="match_parent"
+                              android:layout_height="50dp"
+                             android:layout_marginTop="3dp"
+                              android:layout_marginRight="5dp"
+                              android:background="@drawable/button_rounded_send"
+                             android:elevation="@dimen/elevation_view"
+                              android:fontFamily="@font/roboto_regular"
+                              android:text="0859 3489 6663"
+                              android:textColor="@color/gray"
+                              android:textSize="15sp" />
+
+                          <android.support.v7.widget.AppCompatButton
+                              android:id="@+id/dialog_btn_email2"
+                              android:layout_width="match_parent"
+                              android:layout_height="50dp"
+                              android:layout_marginRight="5dp"
+                              android:layout_marginBottom="5dp"
+                             android:background="@drawable/button_rounded_orange"
+                             android:elevation="@dimen/elevation_view"
+                              android:fontFamily="@font/roboto_light"
+                               android:text="the.dienk@gmail.com"
+                              android:textColor="@color/gray"
+                              android:textSize="14sp" />
+                      </LinearLayout>
+                  </LinearLayout>
+
+              </LinearLayout>
+
+          </LinearLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

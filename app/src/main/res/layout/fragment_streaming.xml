@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="haqiqi_studio.kancantastreamingapp.StreamingFragment">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/inc_toolbar"/>
+
+
+    <com.google.android.gms.ads.AdView
+        android:layout_below="@id/inc_toolbar"
+        android:id="@+id/adStream"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_id"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarStreaming"
+        android:layout_alignTop="@id/streaming_card_play"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/streaming_card_play"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="3dp"
+        android:clickable="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="5dp">
+        <LinearLayout
+            android:background="@drawable/rectangle_shape_orange_border"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/streaming_img_play"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/circle_shape_orange"
+                android:src="@drawable/drawable_play_pause"
+                android:padding="18dp"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/streaming_txt_info_track"
+        android:layout_above="@id/group_card"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textSize="19sp"
+        android:fontFamily="@font/roboto_light"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status_on"/>
+
+
+
+       <RelativeLayout
+           android:id="@+id/group_card"
+           android:layout_alignParentBottom="true"
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:layout_marginRight="60dp"
+           android:layout_marginLeft="60dp"
+           android:layout_marginBottom="20dp">
+           <android.support.v7.widget.CardView
+               android:id="@+id/streaming_card"
+               app:cardCornerRadius="30dp"
+               app:cardElevation="3dp"
+               android:layout_centerInParent="true"
+               android:background="@drawable/shape_streaming_play"
+               android:foreground="?actionBarItemBackground"
+               android:layout_width="match_parent"
+               android:layout_height="50dp">
+
+             <RelativeLayout
+                 android:layout_gravity="center"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+                 <ImageView
+                     android:id="@+id/streaming_ico_status"
+                     android:padding="8dp"
+                     android:layout_toStartOf="@id/streaming_txt_status"
+                     android:layout_width="40dp"
+                     android:contentDescription="@string/app_bar_name"
+                     android:layout_height="match_parent"
+                     app:srcCompat="@drawable/ic_connect"/>
+
+
+                 <TextView
+                     android:id="@+id/streaming_txt_status"
+                     android:layout_centerInParent="true"
+                     android:padding="3dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:gravity="center_vertical|end"
+                     android:fontFamily="@font/roboto_light"
+                     android:textSize="22sp"
+                     android:textStyle="bold"
+                     android:textColor="@color/colorPrimaryDark"
+                     android:text="TERSAMBUNG"/>
+             </RelativeLayout>
+
+
+
+           </android.support.v7.widget.CardView>
+
+
+
+       </RelativeLayout>
+
+
+</RelativeLayout>
