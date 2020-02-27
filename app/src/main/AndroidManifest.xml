@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="haqiqi_studio.kancantastreamingapp">
+    package="haqiqi_studio.smartpondok">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -8,55 +8,53 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo_spondok"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logo_spondok"
         android:supportsRtl="true"
         android:theme="@style/AppNoActionBar">
-        <activity android:name=".IntroActivity">
+        <activity android:name=".Activities.BayarLangsung"></activity>
+        <activity android:name=".Activities.LihatPesanan" />
+        <activity android:name=".DaftarBarang" />
+        <activity android:name=".Activities.Keranjang" />
+        <activity android:name=".Activities.ProfilSantri" />
+        <activity android:name=".Activities.PembayaranNTB" />
+        <activity android:name=".Activities.PembayaranBRI" />
+        <activity android:name=".Bayar" />
+        <activity android:name=".MetodeBayar" />
+        <activity
+            android:name=".Activities.PembayaranSPP"
+            android:label="@string/title_activity_pembayaran_spp"
+            android:theme="@style/AppNoActionBar.NoActionBar" />
+        <activity android:name=".RiwayatTransaksiSantri" />
+        <activity android:name=".RiwayatTransaksiWali" />
+        <activity android:name=".Fashion" />
+        <activity android:name=".Invoice" />
+        <activity android:name=".Activities.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activities.Intro" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Activities.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppNoActionBar" />
         <activity
-            android:name=".ListProgram"
+            android:name=".Activities.ListProgram"
             android:theme="@style/AppNoActionBar" />
         <activity
             android:name=".AnimList"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name=".IklanActivity"
-            android:label="@string/title_activity_iklan"
-            android:theme="@style/AppNoActionBar" />
-        <activity
-            android:name=".LaguActivity"
-            android:label="@string/title_activity_lagu"
-            android:theme="@style/AppNoActionBar" />
-        <activity
-            android:name=".AktivitasActivity"
-            android:label="@string/title_activity_aktivitas"
-            android:theme="@style/AppNoActionBar" />
-        <!-- This meta-data tag is required to use Google Play Services. -->
+            android:theme="@style/AppTheme" /> <!-- This meta-data tag is required to use Google Play Services. -->
         <meta-data
             android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-
-        <activity
-            android:name=".AdsActivity"
-            android:label="@string/title_activity_ads" /> <!-- Include the AdActivity configChanges and theme. -->
+            android:value="@integer/google_play_services_version" /> <!-- Include the AdActivity configChanges and theme. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
-        <activity
-            android:name=".BannerActivity"
-            android:label="@string/title_activity_banner"></activity>
     </application>
 
 </manifest>

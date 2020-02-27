@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_weight="2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/logo_spondok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <haqiqi_studio.smartpondok.CustomFonts.MyTextView_Roboto_Bold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harry Sunaryo"
+            android:textColor="@color/foreColor"
+            android:gravity="center"
+            android:textSize="22dp"/>
+
+       <android.support.v7.widget.CardView
+           app:cardCornerRadius="5dp"
+           app:cardElevation="1dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:weightSum="10"
+               android:orientation="horizontal">
+               <haqiqi_studio.smartpondok.CustomFonts.EditText_Roboto_Regular
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="9"
+                   android:layout_margin="5dp"
+                   android:background="@color/foreColor"/>
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:layout_alignParentRight="true"
+                   android:layout_margin="5dp"
+                   android:src="@drawable/ic_search"/>
+           </LinearLayout>
+       </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,22 +1,23 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="haqiqi_studio.kancantastreamingapp.HomeFragment">
-    <include layout="@layout/toolbar_base"/>
+    tools:context="haqiqi_studio.smartpondok.HomeFragment">
 
-    <LinearLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#fcfcfc"
-        android:gravity="center">
-
+        tools:context="haqiqi_studio.smartpondok.HomeFragment">
+        <include layout="@layout/toolbar_home"/>
 
         <include layout="@layout/content_home"/>
 
 
     </LinearLayout>
 
-</LinearLayout>
+
+
+</ScrollView>

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/KancantaStreamingApp.iml" filepath="$PROJECT_DIR$/KancantaStreamingApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmartPondok.iml" filepath="$PROJECT_DIR$/SmartPondok.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

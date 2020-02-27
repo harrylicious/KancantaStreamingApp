@@ -7,14 +7,14 @@
     android:layout_height="match_parent"
     android:theme="@style/AppNoActionBar"
     style="@style/AppNoActionBar"
-    tools:context="haqiqi_studio.kancantastreamingapp.IntroActivity">
+    tools:context="haqiqi_studio.smartpondok.Activities.Intro">
 
     <ImageView
         android:id="@+id/intro_img_logo"
         android:layout_above="@id/splash_screen_progress_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/logo_full"
+        android:src="@drawable/logo_spondok"
         android:layout_centerInParent="true"
         />
 

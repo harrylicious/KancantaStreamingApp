@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="2.5dp"
+    android:paddingBottom="2.5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <include layout="@layout/toolbar_base"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <RelativeLayout
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:background="#fff"
+               android:orientation="horizontal"
+               android:padding="10dp" >
+
+
+               <LinearLayout
+                   android:id="@+id/thumbnail"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentLeft="true"
+                   android:layout_marginRight="7dip"
+                   android:padding="2dip" >
+
+                   <ImageView
+                       android:id="@+id/list_image"
+                       android:layout_width="50dip"
+                       android:layout_height="50dip"
+                       android:src="@drawable/santri" />
+               </LinearLayout>
+
+
+               <LinearLayout
+                   android:id="@+id/cart_plus_minus_layout"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_below="@+id/from_name"
+                   android:orientation="horizontal" >
+
+                   <TextView
+                       android:id="@+id/plist_price_text"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center_horizontal|center_vertical"
+                       android:layout_marginLeft="60dip"
+                       android:layout_weight="0.23"
+                       android:paddingRight="5dip"
+                       android:text="Bagaimana keadaan anak saya pak/bu ?"
+                       android:textColor="#1d1d1d"
+                       android:textSize="12dip" />
+
+
+                   <TextView
+                       android:id="@+id/cart_product_quantity_tv"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center_vertical|center_horizontal"
+                       android:paddingLeft="15dip"
+                       android:paddingRight="15dip"
+                       android:text="2 menit\n lalu"
+                       android:textSize="12dip"
+                       android:textStyle="bold" />
+
+                   <ImageView
+                       android:id="@+id/cart_plus_img"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/ic_connect" />
+               </LinearLayout>
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_marginTop="5dp"
+               android:layout_marginLeft="5dp"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/gray"
+               android:orientation="horizontal"
+               android:padding="10dp" >
+
+               <!-- ListRow Left sied Thumbnail image -->
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentLeft="true"
+                   android:layout_marginRight="7dip"
+                   android:padding="2dip" >
+
+                   <ImageView
+                       android:layout_width="50dip"
+                       android:layout_height="50dip"
+                       android:src="@drawable/wali" />
+               </LinearLayout>
+
+               <!-- Title Of Song -->
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_below="@+id/from_name"
+                   android:orientation="horizontal" >
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center_horizontal|center_vertical"
+                       android:layout_marginLeft="60dip"
+                       android:layout_weight="0.23"
+                       android:paddingRight="5dip"
+                       android:text="Alhamdulillah, ananda kita sehat-sehat saja bu. Saat ini sedang pelajaran"
+                       android:textColor="#1d1d1d"
+                       android:textSize="12dip" />
+
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center_vertical|center_horizontal"
+                       android:paddingLeft="15dip"
+                       android:paddingRight="15dip"
+                       android:text="2 menit\n lalu"
+                       android:textSize="12dip"
+                       android:textStyle="bold" />
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/ic_connect" />
+               </LinearLayout>
+           </RelativeLayout>
+       </LinearLayout>
+   </LinearLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <!-- ListRow Left sied Thumbnail image -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="7dip"
+            android:padding="2dip" >
+
+            <ImageView
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:src="@drawable/santri" />
+        </LinearLayout>
+
+        <!-- Title Of Song -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/from_name"
+            android:orientation="horizontal" >
+
+            <haqiqi_studio.smartpondok.CustomFonts.EditText_Roboto_Regular
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="60dip"
+                android:layout_weight="0.23"
+                android:paddingRight="5dip"
+                android:text=""
+                android:hint="Baik, terimakasih info nya ya pak"
+                android:textColor="#1d1d1d"
+                android:textSize="12dip" />
+
+
+
+            <haqiqi_studio.smartpondok.CustomFonts.MyTextView_Roboto_Medium
+                android:id="@+id/gunakan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kirim"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:padding="15dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_button"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

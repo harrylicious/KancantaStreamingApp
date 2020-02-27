@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:layout_margin="@dimen/margin_msg_body"
     android:background="@drawable/group_rounded_gray2"
-    tools:context="haqiqi_studio.kancantastreamingapp.IklanActivity"
+    tools:context="haqiqi_studio.smartpondok.IklanActivity"
     android:orientation="vertical">
 
     <RelativeLayout

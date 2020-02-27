@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#AED581</color>
-    <color name="colorPrimaryDark">#69AB12</color>
+    <color name="colorPrimary">#3CDD37</color>
+    <color name="colorPrimaryDark">#2EB828</color>
     <color name="backgroundcolor">#fcfcfc</color>
     <color name="lightgray">#ededed</color>
     <color name="deeppurple">#7c4dff</color>
@@ -11,6 +11,9 @@
     <color name="darkblue">#23283a</color>
     <color name="testcolorblue">#152b38</color>
     <color name="pink">#fe104d</color>
+    <color name="red">#B31515</color>
+
+    <color name="main_color">#0BD505</color>
 
     <color name="black_overlay">#66000000</color>
 
@@ -33,7 +36,7 @@
     <color name="foreColor">#FFF</color>
 
     <color name="gray">#F0F0F0</color>
-    <color name="gray1">#E3E3E3</color>
+    <color name="gray1">#BFBFBF</color>
 
 
 </resources>

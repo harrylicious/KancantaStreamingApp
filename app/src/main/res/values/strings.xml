@@ -1,16 +1,18 @@
 <resources>
-    <string name="app_name">Kancanta Streaming App</string>
+    <string name="app_name">Spondok</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_streaming">Streaming</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_notifications">Order</string>
     <string name="title_about">About</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_message">Message</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">No Item</string>
 
-    <string name="app_bar_name">Kancanta App</string>
+    <string name="app_bar_name">SPONDOK</string>
     <string name="msg_text">Kirim Feedback anda untuk mendukung dan membantu aplikasi kami menjadi lebih baik</string>
     <string name="msg_title">KOTAK SARAN</string>
     <string name="send">KIRIM</string>
@@ -45,6 +47,24 @@
         <item>Indie Kancanta</item>
         <item>Wajah Pariwisata</item>
     </array>
+
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Fruits</item>
+        <item>Vegitables</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_basket</item>
+    </array>
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_product_details">ProductDetailsActivity</string>
+
+
     <string name="title_activity_iklan">IklanActivity</string>
     <string name="title_activity_lagu">LaguActivity</string>
     <string name="title_activity_aktivitas">AktivitasActivity</string>
@@ -71,5 +91,18 @@
     <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
     <string name="banner_id">ca-app-pub-6121010286485686/1609579230</string>
     <string name="ads_list">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="title_activity_profile_wali">ProfileWali</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_pembayaran_spp">PembayaranSPP</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 
 </resources>
